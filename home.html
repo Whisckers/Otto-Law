@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#16081A" />
+    <link href="css/general/general.css" rel="stylesheet">
+    <link href="css/main/general/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/main/pages/home.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/favicon.png?_t=myybe1nmcbymeyr">
+    <meta name="google-signin-client_id"
+        content="543195609549-2th51s0f8r2ho8hh9mcnrbarfohr0jnn.apps.googleusercontent.com">
+    <link href="css/lib/kalenux/select.css" rel="stylesheet">
+   
+    <link rel="preload" href="css/main/service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <title>Lawnux</title>
+    <meta name="keywords" content="{keywords}">
+    <meta name="description"
+        content="A global law and consulting office that helps you take confident steps on the legal foundation of the future.">
+    <meta name="og:image" content="{og_image}">
+    <script src="js/general/header.js"></script>
+    <script src="js/main/general/header.js"></script>
+    <script src="js/main/general/flow.js"></script>
+    
+</head>
+<style>
+
+
+body {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background overlay */
+body::before {
+  content: "";
+  position: fixed;           /* stays fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/mla_13.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;              /* control background darkness/lightness */
+  z-index: -1;               /* behind all content */
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@font-face {
+    font-family: "Times New Roman";
+    src: url(../../../font/MonteCarlo/MonteCarlo.woff2)format("woff2");
+    font-display: swap
+}
+
+article .date,
+article .writer {
+    position: absolute;
+    right: 1rem;
+    color: gray
+}
+
+article .writer {
+    bottom: 1rem;
+    font-size: .9rem
+}
+
+article .date {
+    top: 1rem
+}
+
+.ht-video-p {
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 125px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #0f8cdf; /* make text white */
+    font-family: "Times New Roman";
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff,
+        0 0 40px #ffffff,
+        0 0 55px #ffffff,
+        0 0 75px #ffffff;
+        font-weight: bolder;
+
+        .ht-video-p {
+    /* existing styles above */
+    color: #000000;
+    text-shadow: 0 0 20px #23a038;
+    animation: glow 7s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    }
+}
+
+}
+
+
+.ht-video-p span {
+    font-family: "MonteCarlo";
+    display: table-cell;
+    opacity: 0
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(1) {
+    animation: opacity 1s 1.05s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(2) {
+    animation: opacity 1s 1.1s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(3) {
+    animation: opacity 1s 1.15s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(4) {
+    animation: opacity 1s 1.2s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(5) {
+    animation: opacity 1s 1.25s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(6) {
+    animation: opacity 1s 1.3s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(7) {
+    animation: opacity 1s 1.35s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(8) {
+    animation: opacity 1s 1.4s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(9) {
+    animation: opacity 1s 1.45s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(10) {
+    animation: opacity 1s 1.5s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(11) {
+    animation: opacity 1s 1.55s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(12) {
+    animation: opacity 1s 1.6s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(13) {
+    animation: opacity 1s 1.65s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(14) {
+    animation: opacity 1s 1.7000000000000002s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(15) {
+    animation: opacity 1s 1.75s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(16) {
+    animation: opacity 1s 1.8s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(17) {
+    animation: opacity 1s 1.85s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(18) {
+    animation: opacity 1s 1.9s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(19) {
+    animation: opacity 1s 1.9500000000000002s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(20) {
+    animation: opacity 1s 2s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(21) {
+    animation: opacity 1s 2.05s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(22) {
+    animation: opacity 1s 2.1s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(23) {
+    animation: opacity 1s 2.1500000000000004s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(24) {
+    animation: opacity 1s 2.2s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(25) {
+    animation: opacity 1s 2.25s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(26) {
+    animation: opacity 1s 2.3s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(27) {
+    animation: opacity 1s 2.35s both
+}
+
+.ht-video-p div:nth-child(1) span:nth-child(28) {
+    animation: opacity 1s 2.4000000000000004s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(1) {
+    animation: opacity 1s 2.45s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(2) {
+    animation: opacity 1s 2.5s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(3) {
+    animation: opacity 1s 2.55s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(4) {
+    animation: opacity 1s 2.6s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(5) {
+    animation: opacity 1s 2.6500000000000004s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(6) {
+    animation: opacity 1s 2.7s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(7) {
+    animation: opacity 1s 2.75s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(8) {
+    animation: opacity 1s 2.8s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(9) {
+    animation: opacity 1s 2.85s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(10) {
+    animation: opacity 1s 2.9000000000000004s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(11) {
+    animation: opacity 1s 2.95s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(12) {
+    animation: opacity 1s 3s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(13) {
+    animation: opacity 1s 3.0500000000000003s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(14) {
+    animation: opacity 1s 3.1s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(15) {
+    animation: opacity 1s 3.15s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(16) {
+    animation: opacity 1s 3.2s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(17) {
+    animation: opacity 1s 3.25s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(18) {
+    animation: opacity 1s 3.3000000000000003s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(19) {
+    animation: opacity 1s 3.35s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(20) {
+    animation: opacity 1s 3.4000000000000004s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(21) {
+    animation: opacity 1s 3.45s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(22) {
+    animation: opacity 1s 3.5s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(23) {
+    animation: opacity 1s 3.5500000000000003s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(24) {
+    animation: opacity 1s 3.6s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(25) {
+    animation: opacity 1s 3.6500000000000004s both
+}
+
+.ht-video-p div:nth-child(2) span:nth-child(26) {
+    animation: opacity 1s 3.7s both
+}
+
+.header-holder {
+    background: #4A84C4;
+}
+
+.header-nav a {
+    color: #fff
+}
+
+.ht-inner,
+.ht-video {
+    position: relative
+}
+.home-top{
+    min-height:300px;
+    height: auto;
+}
+
+.home-top .ht-inner {
+    top: 60%;
+    height: auto
+}
+
+.header-nav.social-medias span {
+    color: #fff !important
+}
+
+.header[data-state=open] .header-logo {
+    background: 0
+}
+
+.header[data-state=open] .header-img {
+    opacity: 1
+}
+
+.ht-video {
+    width: 100%;
+    display: flex
+}
+
+video {
+    object-fit: cover;
+    min-height: 500px;
+    height: 100%;
+    width: 100%
+}
+
+.ht-threes {
+    display: flex;
+    margin: auto
+}
+
+.ht-three {
+    width: 400px;
+    margin: 0 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column
+}
+
+.home-top .ht-threes .ht-three {
+    top: -4.59rem
+}
+
+.languages .kalenux-search {
+    color: #fff
+}
+
+/* Container that holds both text and background */
+.httf-container {
+  position: relative; /* So the .httf-bg can position inside this */
+  overflow: hidden;
+}
+
+/* Background image styling */
+.httf-bg {
+  background-image: url(../../../img/t.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.14; /* Adjust for subtle watermark look */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensures it's behind text */
+}
+
+/* Text content styling */
+.httf-text {
+  position: relative; /* Keeps it above the image */
+  z-index: 1;
+  color: #fff; /* or whatever text color you want */
+  text-align: center;
+  padding: 3rem;
+}
+
+
+.htt-header {
+    color: #fff;
+    background: #4A84C4;
+    text-align: center;
+    font-size: 1rem
+}
+
+.secondary-border:after,
+.secondary-border:before {
+    content: "";
+    width: 40%;
+    border: solid 3px transparent;
+    position: absolute
+}
+
+.secondary-border:before {
+    height: 30%;
+    border-left-color: var(--secondary-color);
+    border-top-color: var(--secondary-color);
+    top: -1rem;
+    left: -1rem
+}
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h1 {
+  font-size: 1.5rem;
+  color: #4A84C4;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #4A84C4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #4A84C4;
+}
+
+.social-icons a img {
+  width: 35px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+
+.htt-header h3 {
+    margin: auto;
+    padding: 1.5rem 0
+}
+
+.ht-bot,
+.widther {
+    margin: auto;
+    width: 100%;
+    display: flex
+}
+
+.ht-bot {
+    padding: 0 2rem 1rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    background: #4A84C4;
+}
+
+.ht-bot h2 {
+    color: #fff;
+   
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.widther {
+    max-width: 1600px
+}
+
+.ht-bot .btn {
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: auto 0;
+    padding: .5rem 1rem
+}
+
+.ht-bg {
+    background: #4A84C4;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    top: 0
+}
+
+.home-top,
+.wt-inner,
+.wt-inner .btn {
+    position: relative
+}
+
+.secondary-border:after {
+    height: 50%;
+    border-right-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    bottom: -1rem;
+    right: -1rem
+}
+
+.wt-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;
+    padding: 5rem 0;
+    color: #fff;
+    z-index: 2
+}
+
+.wt-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../img/3monu.webp);
+    background-position: center;
+    background-size: cover
+}
+
+.wt-filter {
+    left: 0;
+    top: 0;
+    background: #4A84C4;
+    z-index: 1;
+    opacity: .6
+}
+
+.wt-inner .btn {
+    margin: 1rem auto auto
+}
+
+.home-top .ht-threes {
+    position: relative;
+    z-index: 8
+
+}
+
+.our-services {
+    padding: 5rem 0
+}
+
+
+.our-services .image-slider {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px; /* a bit taller to fit captions */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: #f8f8f8;
+
+  /* Hide scrollbar in all browsers */
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.our-services .image-slider::-webkit-scrollbar {
+  display: none; /* Chrome & Safari */
+}
+
+/* Slides wrapper */
+.our-services .image-slider .slides {
+  display: flex;
+  gap: 20px;
+  width: calc(200% + 20px);
+  animation: continuousSlide 20s linear infinite;
+  align-items: flex-start;
+}
+
+/* Each figure block */
+.our-services .image-slider .slide {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Images */
+.our-services .image-slider img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px groove #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Captions under images */
+.our-services .image-slider figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Continuous sliding motion */
+@keyframes continuousSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 10px)); }
+}
+
+
+.work-styles {
+    display: flex;
+    flex-direction: column;
+    background: var(--gray-color)
+}
+
+.sep,
+.work-together,
+.wt-inner p {
+    position: relative
+}
+
+.work-together h2 {
+    margin: auto auto 2rem
+}
+
+.wt-inner p {
+    padding: 0 2rem
+}
+
+.ht-three:after,
+.ht-three:before {
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 40%
+}
+
+.ht-three:before {
+    left: -1rem;
+    top: -1rem;
+    border-left: solid 2px var(--secondary-color);
+    border-top: solid 2px var(--secondary-color)
+}
+
+.ht-three:after {
+    right: -1rem;
+    bottom: -1rem;
+    border-right: solid 2px var(--secondary-color);
+    border-bottom: solid 2px var(--secondary-color)
+}
+
+.ht-threes {
+  display: flex;             /* allows justify-content to work */
+  justify-content: center;   /* centers text horizontally */
+  align-items: center;       /* centers text vertically */
+  font-weight: bold;
+  font-size: 2rem;           /* adjust size as needed */
+  text-align: center;        /* center text inside container */
+  width: 80%;                /* container width (adjustable) */
+  max-width: 1200px;          /* prevents it from stretching too wide */
+  height: auto;              /* automatically fits text height */
+  padding: 20px 15px;        /* space around text */
+  margin: 20px auto;         /* centers container horizontally */
+  background-color: #f5f5f5; /* optional background */
+  border-radius: 10px;       /* optional rounded corners */
+  color: #222;               /* text color */
+  box-sizing: border-box;    /* includes padding in width/height */
+}
+
+
+.wss-inner {
+    padding: 5rem 0
+}
+
+.contact-inner {
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    margin: auto
+}
+
+.contact-map {
+    margin: auto 1rem auto 2rem;
+    width: 50%;
+    height: 500px
+}
+
+.contact-form {
+    margin: auto 2rem auto 1rem;
+    width: 50%
+}
+
+.contact-form,
+.contact-form form {
+    display: flex;
+    flex-direction: column
+}
+
+.contact {
+    margin: 5rem 0
+}
+
+.contact-input,
+.contact-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: var(--primary-color)
+}
+
+.cb-agreement {
+    display: table;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.cb-agreement a {
+    font-weight: 700
+}
+
+.btn-primary {
+    margin: auto
+}
+
+.header-nav .icon-menu {
+    color: #fff
+}
+
+@media (max-width:1360px) {
+    .ht-three {
+        width: 300px
+    }
+}
+
+@media (max-width:900px) {
+    .contact-inner {
+        flex-direction: column-reverse
+    }
+
+    .contact-map {
+        width: 100%;
+        margin: auto
+    }
+
+    .contact {
+        margin: auto 0
+    }
+
+    .contact-form {
+        margin: 5rem auto
+    }
+
+    .ht-threes {
+        flex-direction: column
+    }
+
+    .ht-three {
+        margin: auto auto 4rem
+    }
+
+    .contact-form,
+    .ht-bot,
+    .ht-video-p {
+        padding: 0 2rem;
+        box-sizing: border-box
+    }
+
+    .contact-form {
+        width: 100%;
+        min-width: 300px;
+        max-width: 650px
+    }
+
+    .our-services .btn-primary {
+        margin: auto
+    }
+
+    .ht-video-p {
+        top: calc(50% - 1rem);
+        font-size: 3rem;
+        flex-wrap: wrap
+    }
+}
+
+@media (max-width:650px) {
+    .home-top {
+        padding-top: 80px
+    }
+
+    .header .header-img {
+        opacity: 1
+    }
+
+    .header .header-logo {
+        background: 0 0
+    }
+}
+
+@media (max-width:450px) {
+    .ht-video-p {
+        font-size: 2rem
+    }
+}
+
+@media (max-width:360px) {
+    .ht-threes {
+        margin: 0 2rem;
+        box-sizing: border-box
+    }
+
+    .home-top .ht-threes .ht-three {
+        width: auto
+    }
+}
+
+.contact-form h3 {
+    margin: auto auto 2rem;
+    text-align: center
+}
+
+.contact-form .btn {
+    margin: 1rem auto auto
+}
+
+/* Initial hidden state */
+.float-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: flowDown 7s ease-out forwards;
+}
+.float-down.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Flow down animation */
+@keyframes flowDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-down {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+p.float-down:nth-of-type(1) { animation-delay: 0.5s; }
+p.float-down:nth-of-type(2) { animation-delay: 0.7s; }
+p.float-down:nth-of-type(3) { animation-delay: 0.8s; }
+
+
+</style>
+
+    <style id="devicewidth">
+        :root {
+            --dwidth: 1910px;
+        }
+    </style>
+    <div class="home-top">
+        <div class="header" id="header">
+            <div class="header-bg"></div>
+            <div class="header-holder">
+                <div class="header-inner">
+                    <a class="header-logo" href="/" title="Otto Itumeleng">
+                        <img class="header-img" src="img/logotto.png" alt="Otto Itumeleng Law Chambers">
+                    </a>
+                    <ul class="header-navs" id="general_header_menu">
+                        <li class="header-nav"><a href="home.html">Practice Area</a></li>
+                        <li class="header-nav"><a href="about-us.html">About Us</a></li>
+                        <li class="header-nav"><a href="our-services.html">Services & Clientele</a></li>
+                        <li class="header-nav"><a href="blog.html">Team</a></li>
+                        <li class="header-nav"><a href="career.html">Career</a></li>
+                        <li class="header-nav"><a href="contact.html">Contact</a></li>
+                        <li class="header-nav header-menu"><span class="icon-menu copen" data-to="menu"></li>
+                        <li class="header-nav social-medias">
+                            <a class="social-media" href="https://instagram.com/lawnux"><span
+                                    class="icon-instagram"></span></a>
+                            <a class="social-media" href="https://www.linkedin.com/in/lawnux-law-and-consulting/"><span
+                                    class="icon-linkedin"></span></a>
+                            <a class="social-media"
+                                href="https://www.youtube.com/channel/lawnux"><span
+                                    class="icon-youtube"></span></a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="header-mobile-menu" id="menu">
+                <div class="hmm-inner">
+                    <div class="hmm-bg"></div>
+                    <ul class="hmm-minner">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-close copen" data-the="menu"></div>
+            </div>
+        </div>
+        <div class="ht-video">
+            <video src="img/highc.webm" loop autoplay="true" muted="true"></video>
+            <div class="ht-video-p">
+                <div>
+                    <span>Need a Lawyer?</span><br>
+                    <span>Otto  Itumeleng Law</span><br />
+                    <span>&nbsp;</span>
+                    <span>Get help with all your legal needs</span>
+    
+                </div>
+            </div>
+        </div>
+        <div class="ht-inner">
+            <div class="ht-bg"></div>
+            <div class="ht-threes">
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>WHO ARE WE?</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style ="text-align: justify;">Otto Itumeleng Law Chambers is a trusted legal practice committed to delivering expert representation and counsel across a broad spectrum of legal matters.
+                        Founded on principles of integrity, professionalism, and client-centred service, we provide solutions that are tailored to your unique situation.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>WHAT DO WE DO?</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style ="text-align: justify;">At OTTO ITUMELENG Law Chambers, we provide a full range of legal services, combining deep legal expertise with commercial awareness. Whether you are an individual, business, or organisation, 
+                            we aim to understand your needs and deliver tailored, practical solutions.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>HOW DO WE DO IT?</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style ="text-align: justify;">At Otto Itumeleng Law Chambers, we approach every matter with precision, discretion, and an unwavering commitment to excellence. 
+                            Our work is guided by a clear process that puts our clients’ interests first — from first consultation to resolution.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="ht-bot">
+            <div class="widther">
+                <h2 style="text-align: center;">GET TO KNOW US</h2>
+            </div>
+        </div>
+    </div>
+    <div class="our-services">
+        <div class="os-inner kalenux-tables" data-type="main" data-url="get/services" data-limit="8" data-id="service">
+        </div>
+
+<div class="our-services">
+  <div class="image-slider">
+    <div class="slides">
+
+      <figure class="slide">
+        <img src="img/fam.jfif" alt="Family Law">
+        <figcaption>Family Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/contr.jpg" alt="Contract Law">
+        <figcaption>Contract Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/labor.webp" alt="Labor Law">
+        <figcaption>Labor Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/Tax-Law.jpg" alt="Tax Law">
+        <figcaption>Tax Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/lock.jpg" alt="Criminal Law">
+        <figcaption>Criminal Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/marry.jpg" alt="Marriage Law">
+        <figcaption>Marriage Law</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/leg.jpg" alt="Legal Advisory">
+        <figcaption>Legal Advisory</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="img/law1.jpg" alt="Civil Law">
+        <figcaption>Civil Law</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    <kalenux-template id="service">
+        <service>
+            <div class="service-inner">
+                <h3 class="service-header sep sep-secondary">+header+</h3>
+                <p class="service-footer">+pre_content+</p>
+                <a class="btn btn-secondary" href="/service/+page+">GET MORE INFO<span
+                        class="icon-arrow-right"></span></a>
+            </div>
+            <div class="service-bg" style="background-image:url(+image+)"></div>
+            <div class="service-bg service-bg-filter"></div>
+        </service>
+    </kalenux-template>
+    <div class="work-styles">
+        <div class="pointer">
+            <h2>HOW WE WORK</h2>
+        </div>
+        <div class="wss-inner widther">
+            <div class="ht-threes">
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>Initial Consultation</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style ="text-align: justify;">We begin with a thorough consultation — in person, virtual, or written — to understand your needs, objectives, and the nature of your legal matter. 
+                            This allows us to assess your case and recommend the best way forward.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>Strategic Planning</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style ="text-align: justify;">Once we understand your goals, we develop a legal strategy tailored to your situation. 
+                            Whether you're facing a dispute, seeking legal advice, or closing a business transaction, our plan will be clear, focused, and aligned with your interests.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+                <div class="ht-three">
+                    <div class="htt-header">
+                        <h3>Execution & Ongoing Support</h3>
+                    </div>
+                    <div class="htt-footer">
+                        <p style="text-align: justify;">With the strategy in place, we take decisive action — from drafting documents and negotiating agreements to representing you in court or finalizing transactions. Throughout the process, we keep you informed and provide continuous support, ensuring your interets.</p>
+                        <div class="httf-bg"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="work-together">
+        <div class="wt-bg"></div>
+        <div class="bg wt-filter"></div>
+        <div class="wt-inner widther">
+            <h2 class="sep sep-secondary">LET'S WORK TOGETHER</h2>
+            <p style="text-align: justify;"> We can deliver legal services that are reliable, efficient, and tailored to the needs of <both individuals and organizations. <br>Above all, we value attention — giving every client the focus they deserve. <br>From the very beginning, 
+                we ensure you are fully informed of every development and that your options are clear at each stage of the process. </p>
+            <a class="btn btn-secondary" href="contact.html">DETAILED INFO</a>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="offset" id='contact'></div>
+        <div class="contact-inner">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.221400141708!2d25.919111!3d-24.616053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b06ce24cec1%3A0xd8f38c177b0a602d!2sZhong%20Gan%20E%20%26%20C%20(Pty)%20Ltd!5e0!3m2!1sen!2sbw!4v1759680499196!5m2!1sen!2sbw" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+            <div class="contact-form">
+                <h3> Need legal representation, advice or consultation</h3>
+                <h4>Get in touch with us and we will get back to you swiftly.</h4>
+                <form onsubmit="return sendMessage(event,this);" autocomplete="on">
+                    <span class="status" id="message_status"></span>
+                    <div class="form-part">
+                        <input class="contact-input" name="fullname" required placeholder="Name Surname"></input>
+                    </div>
+                    <div class="form-part">
+                        <input class="contact-input" name="email" placeholder="Email"></input>
+                    </div>
+                    <div class="form-part">
+                        <input class="contact-input" name="phone" placeholder="Phone"></input>
+                    </div>
+                    <div class="form-part">
+                        <textarea class="contact-textarea" name="message" required placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ </script>
+    <script defer src="js/general/footer.defer.js"></script>
+    <script src="js/main/general/footer.defer.js"></script>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h1>Make it legal with us!</h1>
+      <img src="img/tt.png" alt="logo" style="max-width:150px;">
+    </div>
+    <div class="footer-section">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="home.html">Practice Area</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html">Career</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social-icons">
+      <h1>Follow Us</h1>
+      <a href="https://www.instagram.com/p/CzBiTGbNO1x/?hl=de" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/legalPSG/status/1718977815737938021" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+     <a href="https://www.linkedin.com/company/otto-itumeleng-law-chambers?originalSubdomain=bw" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+</a>
+
+    </div>
+    <div class="footer-section">
+      <h1>Get in touch</h1>
+      <p>nfo@ottoitumelenglaw.co.bw<br />
+        odirile@ottoitumelenglaw.co.bw
+        odirileitum@yahoo.co.uk</p>
+      <p>Tel: +267 318 7699<br />
+         Fax: +267 3906107</p>
+    </div>
+</div>
+</footer>
+
+<script src="js/main/general/flow.js"></script>
+
+</body>
+
+</html>

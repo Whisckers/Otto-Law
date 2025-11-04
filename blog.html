@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#16081A" />
+    <link href="css/general/general.css" rel="stylesheet">
+    <link href="css/main/general/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/main/pages/home.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/favicon.png?_t=myybe1nmcbymeyr">
+    <meta name="google-signin-client_id"
+        content="543195609549-2th51s0f8r2ho8hh9mcnrbarfohr0jnn.apps.googleusercontent.com">
+    <link href="css/lib/kalenux/select.css" rel="stylesheet">
+    <link rel="preload" href="css/lib/kalenux/kalenux_table.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/main/service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <title>Lawnux</title>
+    <meta name="keywords" content="{keywords}">
+    <meta name="description"
+        content="A global law and consulting office that helps you take confident steps on the legal foundation of the future.">
+    <meta name="og:image" content="{og_image}">
+    <script src="js/general/header.js"></script>
+    <script src="js/main/general/header.js"></script>
+
+     <style id="devicewidth">
+        :root {
+            --dwidth: 1910px;
+        }
+    </style>
+    <div class="home-top">
+        <div class="header" id="header">
+            <div class="header-bg"></div>
+            <div class="header-holder">
+                <div class="header-inner">
+                    <a class="header-logo" href="/" title="Otto Itumeleng">
+                        <img class="header-img" src="img/logotto.png" alt="Otto Itumeleng Law Chambers">
+                    </a>
+                    <ul class="header-navs" id="general_header_menu">
+                        <li class="header-nav"><a href="home.html">Practice Area</a></li>
+                        <li class="header-nav"><a href="about-us.html">About Us</a></li>
+                        <li class="header-nav"><a href="our-services.html">Services & Clientele</a></li>
+                        <li class="header-nav"><a href="blog.html">Team</a></li>
+                        <li class="header-nav"><a href="career.html">Career</a></li>
+                        <li class="header-nav"><a href="contact.html">Contact</a></li>
+                        <li class="header-nav header-menu"><span class="icon-menu copen" data-to="menu"></li>
+                        <li class="header-nav social-medias">
+                            <a class="social-media" href="https://instagram.com/lawnux"><span
+                                    class="icon-instagram"></span></a>
+                            <a class="social-media" href="https://www.linkedin.com/in/lawnux-law-and-consulting/"><span
+                                    class="icon-linkedin"></span></a>
+                            <a class="social-media"
+                                href="https://www.youtube.com/channel/lawnux"><span
+                                    class="icon-youtube"></span></a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+  <div class="ht-video">
+            <video src="img/highc.webm" loop autoplay="true" muted="true"></video>
+            <div class="ht-video-p">
+                <div>
+                    <span>Need a Lawyer?</span><br>
+                    <span>Otto  Itumeleng Law</span><br />
+                    <span>&nbsp;</span>
+                    <span>Get help with all your legal needs</span>
+    
+                </div>
+            </div>
+        </div>
+    <!-- INLINE STYLES FOR DROPDOWN GRID -->
+    <style>
+
+    .client-history-container {
+        text-align: center;
+        margin: 60px auto;
+    }
+
+    .client-history-toggle {
+        background-color: #16081A;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .client-history-toggle:hover {
+        background-color: #2a0e30;
+    }
+
+    .client-history-grid {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .client-history-grid.active {
+        max-height: 5000px; /* Big enough to fit content */
+        margin-top: 30px;
+    }
+
+    .client-card {
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: floatDown 0.6s forwards;
+    }
+
+    /* Add staggered delays using nth-child */
+    .client-history-grid.active .client-card:nth-child(1) { animation-delay: 0.05s; }
+    .client-history-grid.active .client-card:nth-child(2) { animation-delay: 0.1s; }
+    .client-history-grid.active .client-card:nth-child(3) { animation-delay: 0.15s; }
+    .client-history-grid.active .client-card:nth-child(4) { animation-delay: 0.2s; }
+    .client-history-grid.active .client-card:nth-child(5) { animation-delay: 0.25s; }
+    .client-history-grid.active .client-card:nth-child(6) { animation-delay: 0.3s; }
+    .client-history-grid.active .client-card:nth-child(7) { animation-delay: 0.35s; }
+    .client-history-grid.active .client-card:nth-child(8) { animation-delay: 0.4s; }
+    .client-history-grid.active .client-card:nth-child(9) { animation-delay: 0.45s; }
+    .client-history-grid.active .client-card:nth-child(10) { animation-delay: 0.5s; }
+    .client-history-grid.active .client-card:nth-child(11) { animation-delay: 0.55s; }
+    .client-history-grid.active .client-card:nth-child(12) { animation-delay: 0.6s; }
+    .client-history-grid.active .client-card:nth-child(13) { animation-delay: 0.65s; }
+    .client-history-grid.active .client-card:nth-child(14) { animation-delay: 0.7s; }
+
+    @keyframes floatDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .client-card img {
+        width: 100%;
+        max-height: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .client-card p {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* ===== FOOTER =====*/
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h1 {
+  font-size: 1.5rem;
+  color: #4A84C4;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #4A84C4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #4A84C4;
+}
+
+.social-icons a img {
+  width: 35px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+.ht-bg {
+    background: #4A84C4;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 20%;
+    top: 0;
+}
+
+/* Initial state: hidden and moved up */
+.float-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Active state: visible and in original position */
+.float-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-section {
+  max-width: 700px;
+  margin: 2em auto;
+  font-family: Arial, sans-serif;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-member {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5em;
+}
+
+.toggle-btn {
+  width: 100%;
+  text-align: left;
+  background: #16081A;
+  color: #fff;
+  border: none;
+  padding: 1em;
+  font-size: 1.1em;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover,
+.toggle-btn[aria-expanded="true"] {
+  background: #370a57;
+}
+
+.member-desc {
+  padding: 0 1em 1em 1em;
+  background: #f8f8f8;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.4em;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.member-desc[hidden] {
+  display: block; /* allow animation but hidden by max-height & opacity */
+  max-height: 0;
+  opacity: 0;
+}
+
+.member-desc:not([hidden]) {
+  max-height: 500px; /* large enough to show content */
+  opacity: 1;
+}
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+  background: #16081A; /* purple bar */
+  color: #fff;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.member-photo {
+  width: 40px;       /* adjust size */
+  height: 40px;
+  border-radius: 50%; /* circular */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.team-section {
+  max-width: 1200px;
+  margin: 3em auto;
+  padding: 0 1em;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.team-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.team-member {
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #16081A;
+  color: white;
+  padding: 1em;
+  border: none;
+  font-size: 1em;
+  gap: 1em;
+  cursor: pointer;
+  text-align: left;
+}
+
+.toggle-btn:hover,
+.toggle-btn[aria-expanded="true"] {
+  background-color:  #4A84C4;
+}
+
+.member-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.member-desc {
+  background-color: #f8f8f8;
+  padding: 1em;
+  font-size: 0.95em;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.member-desc:not([hidden]) {
+  max-height: 500px;
+  opacity: 1;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background overlay */
+body::before {
+  content: "";
+  position: fixed;           /* stays fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/mla_13.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;              /* control background darkness/lightness */
+  z-index: -1;               /* behind all content */
+}
+</style>
+    
+</head>
+
+
+<section class="team-section">
+  <h2>Our Team-Please click on each member to read their portfolio</h2>
+  <div class="team-grid">
+    <!-- LEFT COLUMN -->
+    <div class="team-column">
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc1">
+          <img src="img/md.jpeg" alt="Odirile Otto Itumeleng" class="member-photo" />
+          Odirile Otto Itumeleng - Managing Partner
+        </button>
+        <div class="member-desc" id="desc1" hidden>
+          <p style="text-align: justify;">Otto graduated with a Bachelor of Laws from the University of Botswana in 2006 and won the Law Department Book Prize in 2002/2003. He represented Botswana in international moot court competitions, including the Phillip Jessup Moot in Washington, DC, and the All Africa Human Rights Moot in South Africa. Otto is the founding partner of the firm and worked at Makuyana Legal Practice from 2004, becoming a High Court attorney in 2006. He also completed Commercial Law training through the Law Society of Botswana and the International Senior Lawyers Project.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc2">
+          <img src="img/as.jpg" alt="Tshepo Dipatane" class="member-photo" />
+          Tshepo Dipatane - Associate Partner
+        </button>
+        <div class="member-desc" id="desc2" hidden>
+          <p style="text-align: justify;">Mr. Dipatane holds a Bachelor of Laws from North West University (2006) and was admitted to the Botswana Bar in 2007. He completed an LLM in International Trade and Business Investment at the University of Pretoria. He served as Senior Legal Counsel in the Botswana Defence Force, attaining the rank of Major. Mr. Dipatane is experienced in advising on complex legal matters and has drafted and negotiated commercial agreements with both local and international entities.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc3">
+          <img src="img/katso.jpeg" alt="Katso Megano" class="member-photo" />
+          Katso Megano - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc3" hidden>
+          <p style="text-align: justify;">Katso holds a Bachelor of Laws from the University of Botswana and completed a course in Enterprise Risk Management at Botswana Accountancy College. She began with the firm as an intern and has since established herself as a litigation attorney, particularly in land board disputes, including work with Kgatleng Land Board. Katso also plays a key role in the firm’s debt collection unit, handling matters for clients such as First National Bank of Botswana, MVA Fund, CA Sales & Distribution, and Tlhomeso Timbers.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc4">
+          <img src="img/kago.jpeg" alt="Kago Mokotedi" class="member-photo" />
+          Kago Rapula Mokotedi - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc4" hidden>
+          <p style="text-align: justify;">Kago earned his Bachelor of Laws (LLB) from the University of Botswana in 2014 and later obtained a Master of Laws (LLM) from the University of Pretoria. His advanced training adds depth to his legal practice. Kago has extensive experience in general civil litigation and specializes in areas including criminal law, securitised collections, delict, insurance, property, and commercial law.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN (DUPLICATE FOR DEMO) -->
+    <div class="team-column">
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc5">
+          <img src="img/florence.jpeg" alt="Odirile Otto Itumeleng" class="member-photo" />
+          Florence Caston - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc5" hidden>
+          <p style="text-align: justify;">Florence holds an LLB from the University of Botswana (2014) and has completed Trial Advocacy Training through NITA. She is currently pursuing an MBA, enhancing her expertise in corporate and commercial law. Her specialties include contract law, delict, insurance, and commercial law.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc6">
+          <img src="img/thabang.jpeg" alt="Tshepo Dipatane" class="member-photo" />
+          Thabang Leruo Sejoe - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc6" hidden>
+          <p style="text-align: justify;"> Thabang holds an LLB from the University of Botswana (2020) and is pursuing a Certificate in Compliance Management from the University of Cape Town. His experience spans employment law, labour law, debt recovery, and commercial law, with a growing focus on compliance and corporate governance.</p>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc7">
+          <img src="img/boipelo.jpeg" alt="Katso Megano" class="member-photo" />
+         Boipelo S Gaesi - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc7" hidden>
+          <p style="text-align: justify;">Boipelo earned her LLB (Second Division Upper) from the University of Botswana in 2021. She specializes in commercial and corporate law, with a strong focus on company law, and is actively expanding her expertise in commercial litigation.</p>
+      </div>
+
+      <div class="team-member">
+        <button class="toggle-btn" aria-expanded="false" aria-controls="desc8">
+          <img src="img/sarona.jpeg" alt="Kago Mokotedi" class="member-photo" />
+          Sarona Princess Ragontse - Associate Attorney
+        </button>
+        <div class="member-desc" id="desc8" hidden>
+          <p style="text-align: justify;">Sarona holds a Bachelor of Finance from the University of Botswana and is currently pursuing studies in Financial Modelling and Valuation. As Practice Manager, she oversees finance, HR, marketing, operations, administration, and facilities management within the firm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h1>Make it legal with us!</h1>
+      <img src="img/tt.png" alt="logo" style="max-width:150px;">
+    </div>
+    <div class="footer-section">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="home.html">Practice Area</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Team</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social-icons">
+      <h1>Follow Us</h1>
+      <a href="https://www.instagram.com/p/CzBiTGbNO1x/?hl=de" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/legalPSG/status/1718977815737938021" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+     <a href="https://www.linkedin.com/company/otto-itumeleng-law-chambers?originalSubdomain=bw" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+</a>
+
+    </div>
+    <div class="footer-section">
+      <h1>Get in touch</h1>
+      <p>nfo@ottoitumelenglaw.co.bw<br />
+        odirile@ottoitumelenglaw.co.bw
+        odirileitum@yahoo.co.uk</p>
+      <p>Tel: +267 318 7699<br />
+         Fax: +267 3906107</p>
+    </div>
+</div>
+</footer>
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const contentId = button.getAttribute('aria-controls');
+      const content = document.getElementById(contentId);
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+      // Close all open dropdowns
+      document.querySelectorAll('.member-desc').forEach(desc => desc.setAttribute('hidden', ''));
+      document.querySelectorAll('.toggle-btn').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+
+      // Toggle current
+      if (!isOpen) {
+        content.removeAttribute('hidden');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+</script>
+</body>
+
+</html>

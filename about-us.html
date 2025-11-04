@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#16081A" />
+    <link href="css/general/general.css" rel="stylesheet">
+    <link href="css/main/general/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/main/pages/home.css" rel="stylesheet">
+    <link href="css/main/pages/about-us.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/favicon.png?_t=myybe1nmcbymeyr">
+    <meta name="google-signin-client_id"
+        content="543195609549-2th51s0f8r2ho8hh9mcnrbarfohr0jnn.apps.googleusercontent.com">
+    <link href="css/lib/kalenux/select.css" rel="stylesheet">
+   
+    <link rel="preload" href="css/main/service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <title>Otto</title>
+    <meta name="keywords" content="{keywords}">
+    <meta name="description"
+        content="A global law and consulting office that helps you take confident steps on the legal foundation of the future.">
+    <meta name="og:image" content="{og_image}">
+    <script src="js/general/header.js"></script>
+    <script src="js/main/general/header.js"></script>
+    <script src="js/main/general/flow.js"></script>
+</head>
+<style>
+
+
+body {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background overlay */
+body::before {
+  content: "";
+  position: fixed;           /* stays fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/mla_13.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;              /* control background darkness/lightness */
+  z-index: -1;               /* behind all content */
+}
+
+</style>
+
+    <style id="devicewidth">
+        :root {
+            --dwidth: 1910px;
+        }
+    </style>
+    <div class="home-top">
+        <div class="header" id="header">
+            <div class="header-bg"></div>
+            <div class="header-holder">
+                <div class="header-inner">
+                    <a class="header-logo" href="/" title="Otto Itumeleng">
+                        <img class="header-img" src="img/logotto.png" alt="Otto Itumeleng Law Chambers">
+                    </a>
+                    <ul class="header-navs" id="general_header_menu">
+                        <li class="header-nav"><a href="home.html">Practice Area</a></li>
+                        <li class="header-nav"><a href="about-us.html">About Us</a></li>
+                        <li class="header-nav"><a href="our-services.html">Services & Clientele</a></li>
+                        <li class="header-nav"><a href="blog.html">Team</a></li>
+                        <li class="header-nav"><a href="career.html">Career</a></li>
+                        <li class="header-nav"><a href="contact.html">Contact</a></li>
+                        <li class="header-nav header-menu"><span class="icon-menu copen" data-to="menu"></li>
+                        <li class="header-nav social-medias">
+                            <a class="social-media" href="https://instagram.com/lawnux"><span
+                                    class="icon-instagram"></span></a>
+                            <a class="social-media" href="https://www.linkedin.com/in/lawnux-law-and-consulting/"><span
+                                    class="icon-linkedin"></span></a>
+                            <a class="social-media"
+                                href="https://www.youtube.com/channel/lawnux"><span
+                                    class="icon-youtube"></span></a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="header-mobile-menu" id="menu">
+                <div class="hmm-inner">
+                    <div class="hmm-bg"></div>
+                    <ul class="hmm-minner">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-close copen" data-the="menu"></div>
+            </div>
+        </div>
+        <div class="ht-video">
+            <video src="img/highc.webm" loop autoplay="true" muted="true"></video>
+            <div class="ht-video-p">
+                <div>
+                    <span>Need a Lawyer?</span><br>
+                    <span>Otto  Itumeleng Law</span><br />
+                    <span>&nbsp;</span>
+                    <span>Get help with all your legal needs</span>
+    
+                </div>
+            </div>
+        </div>
+    <!-- INLINE STYLES FOR DROPDOWN GRID -->
+    <style>
+
+    /* ===== FOOTER =====*/
+
+
+.ht-bg {
+    background: #4A84C4;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 1%;
+       background-image: url('img/hist.webp'); /* your background image */
+    top: 0;
+}
+
+/* Initial hidden state */
+.float-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: flowDown 7s ease-out forwards;
+}
+.float-down.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Flow down animation */
+@keyframes flowDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-down {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+p.float-down:nth-of-type(1) { animation-delay: 0.5s; }
+p.float-down:nth-of-type(2) { animation-delay: 0.7s; }
+p.float-down:nth-of-type(3) { animation-delay: 0.8s; }
+
+
+
+</style>
+    
+</head>
+
+<body class="preload" onload="onloaded();">
+    <div class="cookie" id="cookie">
+        <div class="cookie-bg"></div>
+        <div class="cookie-inner">
+            <p>We use cookies to offer you a better experience on our website. By continuing, you agree to our <a
+                    href="policies#kvkk" class="underline">Cookie Policy</a>.</p>
+            <button class="btn btn-blue" onclick="acceptCookie()">Accept</button>
+        </div>
+    </div>
+
+    </div>
+   
+
+   
+          
+        </div>
+        <div class="ht-bg" style="background-image:url(/img/hist.WEBP)"></div>
+        <div class="ht-bg-filter"></div>
+    </div>
+    <div class="about-us widther">
+        <div class="au-inner bound">
+            <div class="au-top">
+            </div>
+            <div class="au-bot">
+                <div class="au-content cooperation widther selected">
+                    <div class="cooperation-top">
+                        <div class="cooperation-parts">
+                            <div class="cooperation-part">
+                                <h3>OUR MISSION</h3>
+                                <p class="float-down">We ensure the preparation of the legal ground of the fields in which our clients
+                                    operate, addressing the legal disputes they experience in their daily lives. This
+                                    removes obstacles and provides legal services to facilitate their activities. With
+                                    preventive legal services, we identify legal risks that may arise against our
+                                    clients before a dispute occurs and aim to minimize these risks. We establish all
+                                    our relationships with the trust required by the legal profession. To strengthen
+                                    this trust, we work with all our might to resolve legal issues as quickly and
+                                    accurately as possible.</p>
+                            </div>
+                            <div class="cooperation-part" style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap;">
+    
+
+                    <!-- COMMERCIAL & CORPORATE LAW -->
+                   <div class="background-section">
+  <section class="cooperation-part" style="display: flex; gap: 30px; flex-wrap: wrap;">
+    <div style="flex: 1 1 60%;">
+                            <h3>COMMERCIAL LITIGATION AND ALTERNATIVE DISPUTE RESOLUTION </h3>
+                            <p style="text-align: justify;">
+                                Fundamental to our approach is being frank with our clients in assessing their risk, both in financial terms and business reputation and establishing the best possible solutions that are effective. We deal with and in high value, complex and significant cases, finding cost effective solutions to disputes and advising our clients on pre-emptive measures of averting disputes. This division is led by a Senior Partner who underwent extensive dispute resolution training at postgraduate level and is well suited to handle complex situations. The division’s experience is signified by the right of audience that we enjoy throughout
+the country’s tribunals and panel of arbitrators and mediators.
+We deal with disputes involving highly complex claims and technical commercial disputes and the Litigation Department has extensive experience in a vast range of commercial disputes, including:
+                            </p>
+                            <ul style="padding-left: 20px; text-align: left;">
+                                <li>Regulatory Litigation</li>
+                                <li>Competition Litigation before the Competition Commission</li>
+                                <li>Contract Disputes</li>
+                                <li>Labour Law Litigation</li>
+                                <li>Commercial contracts</li>
+                                <li>Construction Litigation</li>
+                                <li>Regulatory and Licensing</li>
+                                <li>Insolvency Disputes</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1 1 35%; max-width: 400px;">
+                            <img class="float-down" src="img/insol.jpg" alt="Commercial Law" style="width: 100%; border-radius: 10px;" />
+                        </div>
+                    </section>
+
+                    <!-- DEBT COLLECTION -->
+                    <section class="cooperation-part" style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+                        <div style="flex: 1 1 35%; max-width: 400px;">
+                            <img src="img/FDCPA-Fair-Debt-Collection-Practices-Act.jpg" alt="Debt Collection"
+                                style="width: 100%; border-radius: 10px;" />
+                        </div>
+                        <div style="flex: 1 1 60%;">
+                            <h3>DEBT COLLECTION</h3>
+                            <p style="text-align: justify;">
+                                We act for a wide variety of clients in connection with the collection of debts both large and
+                                small. We can advise our clients on the best method of securing their debts and have an
+                                excellent working relationship with local Deputy Sheriffs. We use a computerized debt
+                                recovery system that enables us to carry out this work speedily and effectively.
+                            </p>
+                            <ul style="padding-left: 20px; text-align: left;">
+                                <li>Secured Repossessions</li>
+                                <li>Debt Recovery</li>
+                                <li>Motor Finance Repossessions</li>
+                                <li>Foreclosures</li>
+                            </ul>
+                        </div>
+                    </section>
+                                        <!-- COMMERCIAL & CORPORATE LAW -->
+                    <section class="cooperation-part" style="display: flex; gap: 30px; flex-wrap: wrap;">
+                        <div style="flex: 1 1 60%;">
+                            <h3>COMMERCIAL & CORPORATE LAW</h3>
+                            <p class="float-down" style="text-align: justify;">
+                                Our Corporate and Commercial division provides practical, proactive legal support to
+                                clients across various industries. We focus on delivering clear, results-driven advice
+                                and work closely with clients and their advisors to meet business objectives. Our team
+                                is committed to helping businesses grow by handling complex legal matters with expertise
+                                and care. Key areas we cover include:
+                            </p>
+                            <ul style="padding-left: 20px; text-align: left;">
+                                <li>Purchase and sale of commercial and investment property</li>
+                                <li>Commercial leasing</li>
+                                <li>Property development</li>
+                                <li>Company and business acquisitions, mergers and sales</li>
+                                <li>Commercial contracts</li>
+                                <li>Commercial funding and security work</li>
+                                <li>Regulatory and Licensing</li>
+                                <li>Drafting and reviewing Commercial Agreements</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1 1 35%; max-width: 400px;">
+                        <img class="float-down" src="img/corporatelaw.webp" alt="Commercial Law" style="width: 100%; border-radius: 10px;" />                        </div>
+                    </section>
+
+                    <!-- DEBT COLLECTION -->
+                    <section class="cooperation-part" style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+                        <div style="flex: 1 1 35%; max-width: 400px;">
+                            <img src="img/inh.jpeg" alt="Debt Collection"
+                                style="width: 100%; border-radius: 10px;" />
+                        </div>
+                        <div style="flex: 1 1 60%;">
+                            <h3>WILLS, TRUSTS, EXECUTRIES & TAXATION</h3>
+                            <p style="text-align: justify;">
+                                We specialise in giving tax planning advice both in relation to making wills and in
+                                 respect of asset protection such as setting up Trusts to suit individual needs. We 
+                                 can offer a full administration service for trusts, but also operate as attorneys or
+                                  guardians for clients. Our main areas of operation include:
+                            </p>
+                            <ul style="padding-left: 20px; text-align: left;">
+                                <li>Setting up and the Administration of Trusts</li>
+                                <li>Inheritance Tax Planning</li>
+                                <li>Executory Administration</li>
+                                <li>Advice on and Drafting Wills </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                      
+                        <div class="social-medias">
+                            <a class="social-media" href="https://instagram.com/lawnux"><span
+                                    class="icon-instagram"></span></a>
+                            <a class="social-media" href="https://www.linkedin.com/in/lawnux-law-and-consulting/"><span
+                                    class="icon-linkedin"></span></a>
+                            <a class="social-media"
+                                href="https://www.youtube.com/channel/lawnux"><span
+                                    class="icon-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h1>Make it legal with us!</h1>
+      <img src="img/tt.png" alt="logo" class="footer-logo">
+    </div>
+
+    <div class="footer-section">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="home.html">Practice Area</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Team</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social-icons">
+      <h1>Follow Us</h1>
+      <a href="https://www.instagram.com/p/CzBiTGbNO1x/?hl=de" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/legalPSG/status/1718977815737938021" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="X / Twitter">
+      </a>
+      <a href="https://www.linkedin.com/company/otto-itumeleng-law-chambers?originalSubdomain=bw" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <div class="footer-section">
+      <h1>Get in Touch</h1>
+      <p>info@ottoitumelenglaw.co.bw<br>
+         odirile@ottoitumelenglaw.co.bw<br>
+         odirileitum@yahoo.co.uk</p>
+      <p>Tel: +267 318 7699<br>
+         Fax: +267 3906107</p>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    &copy; 2025 Otto Itumeleng Law Chambers. All rights reserved.
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all paragraphs, lists, list items, and images
+  const floatElements = document.querySelectorAll("p, ul, li, img");
+
+  // Add the float-down class to each element
+  floatElements.forEach(el => el.classList.add("float-down"));
+
+  // Observer to trigger animation when visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  floatElements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+</body>
+
+</html>

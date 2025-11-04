@@ -1,0 +1,112 @@
+
+    .client-history-container {
+        text-align: center;
+        margin: 60px auto;
+    }
+
+    .client-history-toggle {
+        background-color: #16081A;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .client-history-toggle:hover {
+        background-color: #2a0e30;
+    }
+
+    .client-history-grid {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .client-history-grid.active {
+        max-height: 5000px; /* Big enough to fit content */
+        margin-top: 30px;
+    }
+
+    .client-card {
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: floatDown 0.6s forwards;
+    }
+
+    /* Add staggered delays using nth-child */
+    .client-history-grid.active .client-card:nth-child(1) { animation-delay: 0.05s; }
+    .client-history-grid.active .client-card:nth-child(2) { animation-delay: 0.1s; }
+    .client-history-grid.active .client-card:nth-child(3) { animation-delay: 0.15s; }
+    .client-history-grid.active .client-card:nth-child(4) { animation-delay: 0.2s; }
+    .client-history-grid.active .client-card:nth-child(5) { animation-delay: 0.25s; }
+    .client-history-grid.active .client-card:nth-child(6) { animation-delay: 0.3s; }
+    .client-history-grid.active .client-card:nth-child(7) { animation-delay: 0.35s; }
+    .client-history-grid.active .client-card:nth-child(8) { animation-delay: 0.4s; }
+    .client-history-grid.active .client-card:nth-child(9) { animation-delay: 0.45s; }
+    .client-history-grid.active .client-card:nth-child(10) { animation-delay: 0.5s; }
+    .client-history-grid.active .client-card:nth-child(11) { animation-delay: 0.55s; }
+    .client-history-grid.active .client-card:nth-child(12) { animation-delay: 0.6s; }
+    .client-history-grid.active .client-card:nth-child(13) { animation-delay: 0.65s; }
+    .client-history-grid.active .client-card:nth-child(14) { animation-delay: 0.7s; }
+
+    @keyframes floatDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .client-card img {
+        width: 100%;
+        max-height: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .client-card p {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* Initial state: hidden and moved up */
+.float-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Active state: visible and in original position */
+.float-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Base style for floating down animation */
+.float-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Triggered when element is in view */
+.float-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
